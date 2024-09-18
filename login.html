@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-</head>
-<body>
+    <script src="./scripts/login.js" defer></script>
+  </head>
+  <body>
     <h1>Login As Existing User</h1>
     <div>
-        <a href="./index.html">Home</a>
-        <a href="./login.html">Login</a>
+      <a href="./index.html">Home</a>
+      <a href="./login.html">Login</a>
     </div>
-</body>
+    <form id="login">
+        <input type="text" placeholder="Enter username or email" required name="username or email"> 
+        <input type="password" placeholder="Enter your password" required name="password">
+        <button type="submit">Submit</button>
+    </form>
+    <h1 id="message"></h1>
+  </body>
 </html>
